@@ -1,0 +1,71 @@
+<!-- JENIS PERINTAH -->
+1. ISI
+2. UBAH
+3. HAPUS
+4. TAMPIL
+
+<!-- TABEL -->
+1. Tabel tPelanggan
+2. Tabel tBarang
+3. Tabel tPenjualan
+
+<!-- CONTOH KASUS BENAR -->
+
+    <!-- ISI -->
+    ISI tPelanggan P006 Taufiq;
+    ISI tBarang B006 Dry_Clean;
+    ISI tPenjualan J004 P006 B006 14-06-2023;
+
+    <!-- UBAH -->
+    UBAH tPelanggan P006 Hidayat;
+    UBAH tBarang B006 Cuci_Kering;
+    UBAH tPenjualan J004 P006 B006 15-07-2022;
+
+    <!-- HAPUS -->
+    HAPUS tPelanggan P006;
+    HAPUS tBarang B006;
+    HAPUS tPenjualan J004;
+
+    <!-- TAMPIL -->
+    TAMPIL tPelanggan;
+    TAMPIL tBarang;
+    TAMPIL tPenjualan;
+    TAMPIL tPenjualan tPelanggan;
+    TAMPIL tPenjualan tBarang;
+    TAMPIL tPenjualan tPelanggan tBarang; (BONUS)
+    TAMPIL tPenjualan tBarang tPelanggan; (BONUS)
+
+    <!-- ISI UBAH -->
+    ISI UBAH tPelanggan P006 Taufiq;
+    ISI UBAH tPelanggan P006 Hidayat;
+
+
+    
+
+<!-- CONTOH KASUS SALAH -->
+
+    TAMBAH tPelanggan P006 Taufiq;
+
+    <!-- ISI -->
+    ISI tPelanggan P001 Taufiq;
+    ISI tPelanggan P007;
+    ISI tPelanggan P007 Taufiq Hidayat;
+    ISI tTesting T001 Taufiq;
+
+    <!-- UBAH -->
+    UBAH tBarang B006 Dry_Clean;
+    UBAH tBarang;
+    UBAH tBarang B001 Dry Cleaning;
+    UBAH tTesting T001 testing;
+
+    <!-- HAPUS -->
+    HAPUS tPenjualan J006;
+    HAPUS tPenjualan;
+    HAPUS tTesting T001;
+
+    <!-- TAMPIL -->
+    TAMPIL tTesting;
+    TAMPIL tPenjualan tTesting;
+
+<!-- MENGAKHIRI PROGRAM -->
+jangan lupa bahagia hari ini;
